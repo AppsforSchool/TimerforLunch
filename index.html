@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>給食タイマー</title>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDGothic&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="timer-container">
+        <div class="settings">
+            <label for="target-time-input">チャイムが鳴る目標時刻を設定 (HH:MM:SS):</label>
+            <input type="text" id="target-time-input" value="12:30:00" maxlength="8" pattern="[0-9]{2}:[0-9]{2}:[0-9]{2}" placeholder="例: 12:30:00">
+            <button id="set-time-button">設定</button>
+            <p id="actual-chime-time" class="current-target-time">実際のチャイム時刻: 12:28:40</p>
+        </div>
+
+        <hr class="separator">
+
+        <p class="timer-label" id="timer-label">給食開始まで</p>
+        <div class="timer-display">
+            <span id="timer-sign">-</span>
+            <span id="timer-hours" class="time-part">00</span>
+            <span class="colon">:</span>
+            <span id="timer-minutes" class="time-part">00</span>
+            <span class="colon">:</span>
+            <span id="timer-seconds" class="time-part">00</span>
+            <span class="decimal-point">.</span>
+            <span id="timer-centiseconds" class="time-part centi-part">00</span>
+        </div>
+        
+        <div id="alert-message" class="alert-message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

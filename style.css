@@ -1,0 +1,131 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: 'BIZ UDGothic', sans-serif; /* 日本語フォント */
+    color: #333;
+    text-align: center;
+}
+
+.timer-container {
+    padding: 40px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 650px; /* 小数点以下の追加で幅を少し広げる */
+}
+
+/* --- 設定セクション (変更なし) --- */
+.settings {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+#target-time-input {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    padding: 5px;
+    width: 120px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#set-time-button {
+    font-family: 'BIZ UDGothic', sans-serif;
+    padding: 8px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#set-time-button:hover {
+    background-color: #0056b3;
+}
+
+.current-target-time {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.separator {
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
+/* -------------------- */
+
+
+.timer-label {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.timer-display {
+    font-family: 'Oswald', sans-serif; /* 数字フォント */
+    font-size: 8em;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    color: #007bff; /* 通常のタイマー色 */
+}
+
+#timer-sign {
+    font-size: 1em;
+    margin-right: 10px;
+    width: 0.5em;
+    text-align: right;
+}
+
+.colon {
+    margin: 0 5px;
+}
+
+.time-part {
+    min-width: 1.2em;
+}
+
+/* 小数点以下のスタイル調整 */
+.decimal-point {
+    margin-left: 5px;
+    font-size: 0.8em; /* 小さくして目立たなくする */
+    align-self: flex-end; /* 下端に揃える */
+}
+
+.centi-part {
+    font-size: 0.8em; /* 小さくして目立たなくする */
+    margin-left: -5px; /* 小数点に近づける */
+    align-self: flex-end; /* 下端に揃える */
+}
+
+
+/* --- アラート表示エリアのスタイル (変更なし) --- */
+.alert-message {
+    height: 2em;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: color 0.3s;
+}
+
+.alert-warning {
+    color: #ffc107;
+}
+
+.alert-critical {
+    color: #dc3545;
+}
