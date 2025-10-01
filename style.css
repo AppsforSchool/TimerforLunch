@@ -74,7 +74,7 @@ body {
 }
 
 .timer-display {
-    font-family: 'Consolas', 'Monaco', monospace; /* 数字フォント */
+    font-family: 'BIZ UDGothic', sans-serif; /* 数字フォント */
     font-size: 8em;
     font-weight: 700;
     display: flex;
