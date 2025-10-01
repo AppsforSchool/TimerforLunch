@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
         }
-        alert('無効な時刻形式です。HH:MM:SSの形式で、正しい時刻を入力してください。');
+        alert('無効な時刻形式です。時:分:秒の形式で、正しい時刻を入力してください。');
     });
 
     // 初回表示とタイマーの実行
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             // 基準時刻以降（何分経過したか）
             sign = ''; 
-            labelText = '給食開始から経過';
+            labelText = '給食開始から';
 
             // 強調表示（アラート）ロジックは「秒単位」の経過時間に基づいて動作
             const totalSeconds = Math.floor(totalMs / 1000);
